@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Submit order(failed)">
+    <groups>
+      <run>
+        <include name="submitord"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="RahulShettyFrameWork.SubmitOrderTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchApp"/>
+          <include name="productValidation"/>
+        </methods>
+      </class> <!-- RahulShettyFrameWork.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit order(failed) -->
+</suite> <!-- Failed suite [Suite] -->
